@@ -26,7 +26,7 @@ import {
   TapzoomRecognizer,
 } from '../../../src/gesture-recognizers';
 import {Gestures} from '../../../src/gesture';
-import {Keys} from '../../../src/utils/key-codes';
+import {KeyCodes} from '../../../src/utils/key-codes';
 import {Services} from '../../../src/services';
 import {bezierCurve} from '../../../src/curve';
 import {continueMotion} from '../../../src/motion';
@@ -849,7 +849,7 @@ class AmpImageLightbox extends AMP.BaseElement {
    * @private
    */
   closeOnEscape_(event) {
-    if (event.key == Keys.ESCAPE) {
+    if (event.keyCode == KeyCodes.ESCAPE) {
       this.close();
     }
   }

@@ -26,7 +26,7 @@ import {
   VIDEO_TAGS,
 } from './service/lightbox-manager-impl';
 import {Gestures} from '../../../src/gesture';
-import {Keys} from '../../../src/utils/key-codes';
+import {KeyCodes} from '../../../src/utils/key-codes';
 import {Services} from '../../../src/services';
 import {SwipeYRecognizer} from '../../../src/gesture-recognizers';
 import {bezierCurve} from '../../../src/curve';
@@ -1268,19 +1268,19 @@ export class AmpLightboxGallery extends AMP.BaseElement {
     if (!this.isActive_) {
       return;
     }
-    const {key} = event;
-    switch (key) {
-      case Keys.ESCAPE:
+    const {keyCode} = event;
+    switch (keyCode) {
+      case KeyCodes.ESCAPE:
         this.close_();
         break;
-      case Keys.LEFT_ARROW:
+      case KeyCodes.LEFT_ARROW:
         this.maybeSlideCarousel_(/*direction*/ -1);
         break;
-      case Keys.RIGHT_ARROW:
+      case KeyCodes.RIGHT_ARROW:
         this.maybeSlideCarousel_(/*direction*/ 1);
         break;
       default:
-        // Key not registered. Do nothing.
+        // Keycode not registered. Do nothing.
     }
   }
 

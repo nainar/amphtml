@@ -29,7 +29,7 @@ import {
   ScrollableShareWidget,
 } from '../amp-story-share';
 import {EventType, dispatch} from '../events';
-import {Keys} from '../../../../src/utils/key-codes';
+import {KeyCodes} from '../../../../src/utils/key-codes';
 import {LocalizedStringId} from '../localization';
 import {Services} from '../../../../src/services';
 import {closest} from '../../../../src/dom';
@@ -267,7 +267,7 @@ export class AmpStoryBookend extends AMP.BaseElement {
       if (!this.isActive_()) {
         return;
       }
-      if (event.key == Keys.ESCAPE) {
+      if (event.keyCode == KeyCodes.ESCAPE) {
         event.preventDefault();
         this.close_();
       }

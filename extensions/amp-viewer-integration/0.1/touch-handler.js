@@ -24,7 +24,7 @@ import {listen} from '../../../src/event-helper';
  * @const {!Array<string>}
  */
 const EVENT_PROPERTIES = [
-  'altKey', 'charCode', 'ctrlKey', 'detail', 'eventPhase', 'key',
+  'altKey', 'charCode', 'ctrlKey', 'detail', 'eventPhase', 'keyCode',
   'layerX', 'layerY', 'metaKey', 'pageX', 'pageY', 'returnValue',
   'shiftKey', 'timeStamp', 'type', 'which',
 ];
